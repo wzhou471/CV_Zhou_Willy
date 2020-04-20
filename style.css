@@ -1,0 +1,143 @@
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    width: 900px;
+    border: 10px greenyellow solid;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+.flex {
+    display: flex;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.margin-top2 {
+    margin-top: 40px;
+}
+
+.width {
+    width: 80px;
+}
+
+.white-txt {
+    color: white;
+}
+
+.orange-txt {
+    color: orange;
+}
+
+/* EN-TETE */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 2em 0em 2em;
+}
+
+hr {
+    border-color: black;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 10em;
+    box-shadow: 0 5px 5px grey;
+    margin-left: 10px;
+}
+/* FIN EN-TETE */
+
+/* BLOC GAUCHE */
+.about {
+    background-color: whitesmoke;
+    width: 290px;
+    padding: 5px;
+}
+
+.inner-about {
+    background-color: orange;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow:5px 5px 5px grey;
+    height: auto;
+}
+
+.inner-about h2 {
+    padding-left: 10px;
+}
+
+.inner-about h2:first-child {
+    margin-top: 0;
+}
+
+.inner-about p {
+    margin: 5px 0px 0px 20px;
+}
+
+.inner-about img {
+    width: 10px;
+    margin-right: 15px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+/* FIN BLOC GAUCHE */
+
+
+/* BLOC DROITE */
+.exp {
+    width: 600px;
+    padding: 5px 20px 20px 50px;
+}
+
+.exp p {
+    margin: 0px;
+}
+
+.exp h4 {
+    margin: 5px 0px 0px 0px;
+}
+/* FIN BLOC DROITE */
+
+/* RESPONSIVE */
+@media all and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: auto;
+    }
+    header{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about-exp {
+        flex-direction: column;
+    }
+    .about {
+        width: auto;
+    }
+    .inner-about {
+        display: flex;
+        justify-content: space-around;
+    }
+    .exp {
+        align-self: center;
+        width: auto;
+        padding: 5px 20px 20px 20px;
+    }
+}
+/* FIN RESPONSIVE */
