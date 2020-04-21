@@ -1,0 +1,156 @@
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+}
+
+.container {
+    width: 900px;
+    border: 1px grey solid;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.white-txt {
+    color: white;
+}
+
+.orange-txt {
+    color: orange;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* EN-TETE */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 2em 0em 2em;
+}
+
+hr {
+    border-color: black;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 10em;
+    box-shadow: 0 5px 5px grey;
+    margin-left: 10px;
+}
+/* FIN EN-TETE */
+
+/* COMPÉTENCES */
+.about {
+    background-color: whitesmoke;
+    width: 290px;
+    padding: 5px;
+}
+
+.inner-about {
+    background-color: orange;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow:5px 5px 5px grey;
+    height: auto;
+}
+
+.margin-top2 {
+    margin-top: 40px;
+}
+
+.inner-about h2 {
+    padding-left: 10px;
+}
+
+.inner-about .no-margin-top {
+    margin-top: 0;
+}
+
+.inner-about p {
+    margin: 5px 0px 0px 20px;
+}
+
+.inner-about img {
+    width: 10px;
+    margin-right: 15px;
+}
+/* FIN COMPÉTENCES */
+
+
+/* FORMATIONS & EXPÉRIENCES */
+.exp {
+    width: 600px;
+    padding: 5px 20px 20px 55px;
+}
+
+.exp p {
+    margin: 0px;
+}
+
+.exp h4 {
+    margin: 5px 0px 0px 0px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.width {
+    width: 80px;
+}
+/* FIN FORMATIONS & EXPÉRIENCES */
+
+/* RESPONSIVE */
+@media all and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    header{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-exp {
+        flex-direction: column;
+    }
+
+    .about {
+        width: auto;
+    }
+
+    .inner-about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .exp {
+        align-self: center;
+        width: auto;
+        padding: 5px 20px 20px 20px;
+    }
+    .width {
+        width: 100px;
+    }
+
+    .margin-left {
+        margin-left: 0px;
+    }
+}
+/* FIN RESPONSIVE */
