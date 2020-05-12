@@ -1,5 +1,5 @@
 body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond';
     font-size: 17px;
 }
 
@@ -25,6 +25,19 @@ body {
     text-decoration: underline;
 }
 
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
 /* EN-TETE */
 header {
     display: flex;
@@ -45,7 +58,7 @@ header img {
     border-radius: 50%;
     width: 10em;
     box-shadow: 0 5px 5px grey;
-    margin-left: 10px;
+    margin: 10px 10px 20px;
 }
 /* FIN EN-TETE */
 
@@ -60,12 +73,12 @@ header img {
     background-color: orange;
     padding: 20px;
     font-weight: bold;
-    box-shadow:5px 5px 5px grey;
-    height: auto;
+    box-shadow:5px 6px 5px grey;
+    height: 96%;
 }
 
-.margin-top2 {
-    margin-top: 40px;
+.address {
+    margin-top: 55px;
 }
 
 .inner-about h2 {
@@ -102,14 +115,14 @@ header img {
 }
 
 .margin-top {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .margin-left {
     margin-left: 30px;
 }
 
-.width {
+.date {
     width: 80px;
 }
 /* FIN FORMATIONS & EXPÉRIENCES */
@@ -151,6 +164,19 @@ header img {
 
     .margin-left {
         margin-left: 0px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .inner-about {
+        flex-direction: column;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .date {
+        display: flex;
+        width: auto;
     }
 }
 /* FIN RESPONSIVE */
